@@ -1,0 +1,28 @@
+Bus id: {{ busData[busIndex].bus_id }}<br />
+Date-Time: {{ busData[busIndex].date_time }}<br />
+Event: {{ busData[busIndex].event }}<br />
+Sub Event: {{ busData[busIndex].sub_event }}<br />
+Event Description:
+{{
+  busData[busIndex].event_description === null
+    ? "null"
+    : busData[busIndex].event_description
+}}<br />
+Lat: {{ busData[busIndex].lat }}<br />
+Lon: {{ busData[busIndex].lon }}<br />
+Speed: {{ busData[busIndex].speed }}<br />
+Svcount: {{ busData[busIndex].svcount }}<br />
+Bearing: {{ busData[busIndex].bearing }}<br />
+Status: {{ busData[busIndex].status }}<br />
+Odometer: {{ busData[busIndex].odometer }}<br />
+Car No: {{ busData[busIndex].car_no }}<br />
+Edge Code:{{ busData[busIndex].edge_code }}<br />
+Route Color: {{ busData[busIndex].route_color }}<br />
+Sam Id: {{ busData[busIndex].sam_id }}<br />
+Direction: {{ busData[busIndex].direction }}<br />
+Display Route Code: {{ busData[busIndex].display_route_code }}<br />
+Personel Name: {{ busData[busIndex].personel_name }}<br />
+Personel Last Name: {{ busData[busIndex].personel_last_name }}<br />
+Driver Code: {{ busData[busIndex].driver_code }}<br />
+C1: {{ busData[busIndex].c1 === null ? "null" : busData[busIndex].c1 }}<br />
+C2: {{ busData[busIndex].c2 === null ? "null" : busData[busIndex].c2 }}

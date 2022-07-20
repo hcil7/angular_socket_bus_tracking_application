@@ -1,0 +1,12 @@
+<div class="container">
+  <span
+    [routerLink]="'/view/' + i"
+    class="list"
+    *ngFor="let bus of busData; let i = index"
+  >
+    id: {{ bus.bus_id }}<br />
+    Araç no: {{ bus.car_no }}<br />
+    lat: {{ bus.lat | number: ".1-4" }}<br />
+    lon: {{ bus.lon | number: ".1-4" }}
+  </span>
+</div>
